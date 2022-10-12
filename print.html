@@ -9,12 +9,21 @@
 <body>
     <h1>Print.html</h1>
     <script>
-        const a = 'abcddd'
+        const a = '기본'
         console.log(a);
-        console.warn('abc');
-        console.error('abc');
+
+        /* 
+            • 매개변수로 전달된 값을 출력한다.
+            • 요소를 HTML과 같은 트리 구조로 출력한다.
+        */
+        console.warn('경고 메세지');
+        console.error('에러입니다.');
         console.dir('abc');
-        console.info('abc');
+        /* 
+            • 매개변수로 전달된 객체의 속성을 출력한다.
+            • 요소를 JSON과 같은 트리 구조로 출력한다.
+        */
+        console.info('정보 메세지');
         // 본체.기능
         alert('알림창 좀 그만 떠라...'); // 알림창
         document.write('안녕하세요.');
