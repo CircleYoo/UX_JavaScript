@@ -1,0 +1,36 @@
+<!-- exam03-01 다시 해보기 -->
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter-copy</title>
+</head>
+<body>
+    <h1>exam03-01-copy.html</h1>
+    <div id="counter">0</div>
+    <button id="increase">+</button>
+    <button id="decrease">-</button>
+    <script>
+        const COUNTER = document.getElementById ('counter');
+        const INCREASE = document.getElementById ('increase');
+        const DECREASE = document.getElementById ('decrease');
+
+        let num = 0;
+
+        function render() {
+            COUNTER.innerHTML = num;
+        };
+
+        INCREASE.addEventListener('click', function() {
+            num = num + 1;
+            render();
+        });
+        DECREASE.addEventListener('click', function() {
+            num = num - 1;
+            render();
+        })
+    </script>
+</body>
+</html>

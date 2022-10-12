@@ -15,7 +15,7 @@
         // 상수 변수 무조건 한 값만 가져온다.
         const COUNTER = 
             document.getElementById('counter'); // 주소값 : element를 가져온 값. 하나만 데려온다
-                                                // 참조값
+                                                // 참조값이라고도 한다. : 변경 가능한 값
 
         const INCREASE =
             document.getElementById ('increase');
@@ -29,7 +29,7 @@
         function render() {
             COUNTER.innerHTML = num;
         };
-        // 여기서 function : num에 들어있는 값을 div 안에 집어넣는다.
+        // 1-1. 여기서 function : num에 들어있는 값을 div 안에 집어넣는다.
 
         INCREASE.addEventListener('click', function() {
             num = num + 2;
@@ -37,7 +37,7 @@
             // num++;
             render();
         });
-        // 여기서 fuction : num+2 후, render를 호출한다.
+        // 1-2. 여기서 fuction : num+2 후, render를 호출한다.
         
         DECREASE.addEventListener('click', function() {
             num = num - 2;
