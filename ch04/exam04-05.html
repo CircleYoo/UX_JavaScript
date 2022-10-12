@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exam04-05</title>
+    <!-- 호이스팅 -->
+</head>
+<body>
+    <h1>exam04-05.html</h1>
+    <script>
+        var n1;
+        console.log(n1);
+
+        var n2 = 10;
+        console.log(n2);
+        
+        console.log(n3); // 1. error. 한번도 선언된 적이 때문에 
+        var n3 = 20; // 2. undefined가 뜬다. 마치 변수선언이 먼저 된 것 처럼
+
+
+        // let n3 = 20; 
+        // 1. var를 let으로 바꾸면 error가 뜬다.
+        // 2. let은 호이스팅이 안 된다.
+    </script>
+</body>
+</html>

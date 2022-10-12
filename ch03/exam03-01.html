@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>exam03-01.html</h1>
+    <div id="counter">0</div> <!-- 껍데기: 요소에 접근할 수 있는 값 -->
+    <button id="increase">+</button>
+    <button id="decrease">-</button>
+    <script>
+        // 상수 변수 무조건 한 값만 가져온다.
+        const COUNTER = 
+            document.getElementById('counter'); // 주소값 : element를 가져온 값. 하나만 데려온다
+                                                // 참조값
+
+        const INCREASE =
+            document.getElementById ('increase');
+
+        const DECREASE =
+            document.getElementById ('decrease');
+
+        let num = 0; // 실제 기능을 하는 요소 : 변수 선언(전역변수 : 어디서든지 쓸 수 있다.) 
+
+        // ↓ 함수 만드는 과정 / 함수 정의하기
+        function render() {
+            COUNTER.innerHTML = num;
+        };
+        // 여기서 function : num에 들어있는 값을 div 안에 집어넣는다.
+
+        INCREASE.addEventListener('click', function() {
+            num = num + 2;
+            // // num +=2;
+            // num++;
+            render();
+        });
+        // 여기서 fuction : num+2 후, render를 호출한다.
+        
+        DECREASE.addEventListener('click', function() {
+            num = num - 2;
+            render();
+        });
+
+        // ↓ 함수 호출하기
+        // render();
+    </script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+</head>
+<body>
+    <script>
+        // single line comment
+        /*
+            multi line comment
+        */
+        /* 
+            호이스팅 (Hoisting)
+            var, let, const 
+        */
+        // object, array, string, number, boolean
+        var number = 'Hello World!';
+        // 파란 단어 : 예약어(이미 결정된 언어) :상수를 만들 때 쓰는 명령어
+        // 값을 저장하기 위해 상수를 만든다.
+        // 상수와 변수의 차이 : 상수는 변경X / 변수는 변경 가능
+
+        console.log(number);
+        // const (number) : 상수 / 절대 변하지 않음
+        /*   =  : 
+                    오른쪽에 있는 값을 왼쪽에 복사해서 넣는다. 오른쪽 값는 소멸
+                    왼쪽에 무조건 상수 or 변수
+        */
+        number = '안녕하세요'
+        // var를 입력했기 때문에 중간에 number를 변경해도 아랫줄부터 적용된다.
+
+        console.log(number);
+        // 문자열 () = method or fuction
+        
+        console.log(number * number);  // 곱하기
+
+        /* 홑따옴표, 상따옴표 :
+                                (문자열)
+                                둘 중 하나 사용해도 괜찮다.(but, 홑따옴표 사용 권장)
+                                상따옴표를 사용할 때는 홈따옴표를 감싸고 싶을 때
+        */
+
+        number = 20;  // (숫자형)
+        console.log(number * 123);
+        // (리터럴) 값 그 자체인 값
+
+        var number2 = '10';
+        console.log(number2 * number);
+        // 관리자 메뉴에 가면 number=21, '21'이 숫자형, 문자열임을 알 수 있다.
+        /* 문자형인데 곱하기가 적용됐다?
+                                곱하기 때문에 (숫자만 있는)문자를 숫자로 억지로 변환했다    
+                                = 비추천
+        */
+
+        const abc = 'aespa';
+        console.log(abc);
+    </script>
+</body>
+</html>
+<!-- JavaScript는 문서에 내용이 있는 것을 컨트롤하기 때문에 아래쪽에 입력해주는게 좋다 -->
