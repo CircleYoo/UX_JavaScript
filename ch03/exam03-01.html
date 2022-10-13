@@ -37,11 +37,12 @@
             // num++;
             render();
         });
-        // 1-2. 여기서 fuction : num+2 후, render를 호출한다.
+        // 1-2. 여기서 function : num+2 후, render를 호출한다.
         
         DECREASE.addEventListener('click', function() {
             num = num - 2;
-            render();
+            COUNTER.innerHTML = num;
+            // ↑ render()과 같다.
         });
 
         // ↓ 함수 호출하기

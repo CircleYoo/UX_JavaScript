@@ -10,7 +10,9 @@
 <body>
     <h1>exam03-01-copy.html</h1>
     <div id="counter">10</div>
-    <!-- 1. 문자열을 정수로 변경해야 하는 상황 -->
+    <!-- 1. 문자열을 정수로 변경해야 하는 상황 
+            (html에서는 정수란 없다. 무조건 문자열이다.)
+    -->
     <button id="increase">+</button>
     <button id="decrease">-</button>
     <script>
@@ -24,7 +26,7 @@
             document.getElementById ('decrease');
 
         let num = parseInt(COUNTER.innerHTML);
-        // 2. parseInt()함수로 문자열 인자를 숫자로 변환하기
+        //  [강제형변환] 2. parseInt()함수로 문자열 인자를 숫자로 변환하기
 
         function render() {
             COUNTER.innerHTML = num;

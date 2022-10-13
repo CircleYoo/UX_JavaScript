@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex06_03_null</title>
+</head>
+<body>
+    <h1 id="title">ex06-03-null.html</h1>
+    <script>
+        var var1;
+        console.log(var1); // 1. undefined : 아직 초기화를 안 했으니까
+
+        var1 = 10;
+        console.log(var1); // 2. 10 : 초기화 상태
+
+        // ↓ 3. 다시 의도적으로 값을 빼고 싶을 땐
+        var1 = null;
+
+        const TITLE = document.getElementById('title')
+        console.log(TITLE);
+    </script>
+</body>
+</html>

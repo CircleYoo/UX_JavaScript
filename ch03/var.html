@@ -9,14 +9,21 @@
 <body>
     <h1>var.html</h1>
     <script>
-        var n1; //대입, 할당, 값 넣다/ > 하지 않았음
+        var n0;  // 1. 변수 선언 - 런타임 이전에 먼저 실행
+        n0 = 80; // 2. 값의 할당 - 런타임에 실행
+        console.log(n0); // 80
+                 /* 즉, n0 변수에 값을 할당하는 시점에는 이미 변수 선언이 완료된 상태. 이미 undefined로 초기화
+                    score 변수에 값을 할당하면 score 변수 값은 undefined에서 새롭게 할당한 80으로 변경(재할당)
+                 */
+
+        var n1; // 대입, 할당, 값 넣다 > 하지 않았음
         console.log(n1); // undefined
         console.log(n1 + n1); // Not a Number. 
-                                // 왜? 숫자가 아닌 것들끼리 사칙연산을 했구나!
+                              // 왜? 숫자가 아닌 것들끼리 사칙연산을 했구나!
 
         var n2; 
         n2 = 10; // 초기화(initialize)
-        n2 = 20;
+        n2 = 20; // 두번째 값을 넣어주다 - 대입, 할당, 값 넣다
         console.log(n2);
 
         var n3 = 11; // 선언과 초기화를 동시에
@@ -34,7 +41,8 @@
 
         const N8 = 40; // 선언과 초기화 동시에!!
         console.log(N8);
-        N8 = 50; // 에러 떠서 38,39 line은 실행이 안 된다. 왜? const의 선언과 초기화를 동시에 하지 않았기 때문에
+        N8 = 50; // 에러 떠서 46↓,47↓↓ line은 실행이 안 된다. 
+                 // 왜? const의 선언과 초기화를 동시에 하지 않았기 때문에
         console.log(N8);
         console.log('ddddd')
     </script>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex06_04_typeof</title>
+</head>
+<body>
+    <h1>ex06_04_typeof.html</h1>
+    <script>
+        /* typeof : 
+
+        */
+        var foo;
+        console.log(typeof foo); // undefined
+        
+        foo = 1.1;
+        console.log(typeof foo); // number
+        
+        foo = 'hello';
+        console.log(typeof foo); // string
+        
+        foo = true;
+        console.log(typeof foo); // boolean
+        
+        foo = null;
+        console.log(typeof foo); // object
+        
+        foo = {};
+        console.log(typeof foo); // object
+        
+        foo = []; // 배열(array)
+        console.log(typeof foo); // object
+        console.log('함수처럼' + typeof (foo)); // object
+        
+        foo = function() {};
+        console.log(typeof foo); // function
+        
+        foo = Symbol(); // 심벌
+        console.log(typeof foo); // symbol
+        
+    </script>
+</body>
+</html>
