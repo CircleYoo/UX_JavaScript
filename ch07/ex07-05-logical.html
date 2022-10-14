@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex07-05-logical</title>
+</head>
+<body>
+    <h1>ex07-05-logical</h1>
+    <script>
+        /*
+            || : or
+            && : and
+            !  : not
+        */
+       console.log(true || true || true);     // true
+       console.log(false || false || true);   // true
+       console.log(false || false || false);  // false
+
+       console.log('----');
+       
+       console.log(true && true && true);     // true
+       console.log(true && false && true);    // false
+       console.log(false && false && false);  // false
+
+       console.log('----');
+       
+       console.log(!true);  // false
+       console.log(!false); // true
+
+       console.log('----');
+       
+       console.log(!0);          // true
+       console.log(!3);          // false
+       console.log(!!null);      // false
+       console.log(!!undefined); // false
+       
+       console.log(!!'');   // false 빈 문자열은 false
+       console.log(!!'1');  // true  값이 하나라도 있으면 true
+       
+       // 숫자   -  0 : false, 나머지 : true
+       // 문자열 -  빈칸 : false, 나머지 : true
+       // undefined, NaN, null : false
+       
+       console.log('----');
+       
+       console.log('cat' && '' && 'dog');  // tip. false가 뜰 가능성이 높은 요소를 앞으로
+       console.log('cat' || 'dog');        // tip. true가 뜰 가능성이 높은 요소를 앞으로
+       
+       console.log('----');
+       
+       var foo = null;
+       console.log(typeof foo);
+       console.log(typeof foo === null);
+       console.log(foo === null);
+
+       console.log('----');
+       
+       var foo2 = NaN;
+       console.log(foo2 === NaN);          // false
+       console.log(isNaN(foo2) === true);  // true
+       
+       console.log('----');
+       
+       var foo3;
+       console.log(foo3 === undefined);    //true
+
+       </script>
+</body>
+</html>
