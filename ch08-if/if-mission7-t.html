@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-mission7-t</title>
+</head>
+<body>
+    <h1>if-mission7-t</h1>
+    <script>
+        /*
+            입력받은 값이 문자열이면
+            '숫자가 아닙니다.'출력
+
+            숫자로만 이뤄져 있으면
+            홀수는 '홀수입니다.'
+            짝수는 '짝수입니다.'
+        */
+
+        let val = prompt();
+
+        if(isNaN(val)) {
+            console.log('숫자가 아닙니다.')
+        } else if(parseInt(val) % 2) {
+            console.log('홀수입니다.') // 굳이 '===' 쓸 필요가 없다. 1이면 true, 0이면 false로 빠지기 때문에
+        } else {
+            console.log('짝수입니다')
+        }
+        
+    </script>
+</body>
+</html>

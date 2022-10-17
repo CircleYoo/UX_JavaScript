@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-mission5</title>
+</head>
+<body>
+    <h1>if-mission5</h1>
+    <script>
+        /*
+            절대값 만들기
+        */
+
+        // var num = 89080;
+        var num = -89080;
+
+        // 1번
+        console.log(num < 0 ? -num : num);
+
+        //  2번
+        if (num < 0) { 
+            num = -num; 
+        }
+        console.log(num);
+
+        //  3번
+        if (num < 0) {
+            num *= -1;
+        }
+        console.log(num)
+        
+        // else if문과 else문은 옵션이다.
+    </script>
+</body>
+</html>

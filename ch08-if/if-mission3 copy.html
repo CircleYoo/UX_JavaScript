@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-mission3</title>
+</head>
+<body>
+    <h1>if-mission3</h1>
+    <script>
+        const score = parseInt((Math.random()) * 101);
+        // const score  = 100;
+        console.log(score);
+
+        /*
+            90점 이상은 'A'
+            80점 이상은 'B'
+            70점 이상은 'C'
+            60점 이상은 'D'
+            0점은 '퇴학'
+            나머지 'F'
+        */
+
+        let result = '퇴학'
+        if (score === 100) {result = 'S';}
+        else if (score >= 90) {result = 'A';}
+        else if (score >= 80) {result = 'B';}
+        else if (score >= 70) {result = 'C';}
+        else if (score >= 60) {result = 'D';}
+        else if (score > 0) {result = 'F';}
+        console.log(`${score}점은 ${result}입니다.`)
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if-mission6</title>
+</head>
+<body>
+    <h1>if-mission6</h1>
+    <script>
+        /*
+            quiz. 숫자면 + 10, 문자열이면 출력
+        */
+
+        // 1번 : mission6보다 가독성이 더 좋다.
+        const val = prompt();
+
+        if(isNaN(val)) {
+            console.log(val);
+        } else {
+            const result = parseInt(val);
+            console.log(result + 10);
+        }
+        
+        // 2번
+        // let val = prompt();
+        // if(!isNaN(val)) {
+        //     val = parseInt(val) + 10;
+        // }
+        // console.log(val)
+        
+    </script>
+</body>
+</html>
