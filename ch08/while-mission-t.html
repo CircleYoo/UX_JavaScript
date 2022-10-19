@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while-mission-t</title>
+</head>
+<body>
+    <h1>while-mission-t</h1>
+    <script>
+
+        // prompt값 입력
+            // 0이면 종료
+            // 짝수값을 입력했을 때만 계속 더한다.
+            // 짝수 입력된 값만 모두 더한 값을 마지막으로 출력
+
+        let evenSum = 0;
+
+        while(true) {
+            const num = parseInt(prompt('숫자를 입력하세요 (종료 : 0)'))
+            if(num === 0) { break; }
+            // num % 2 !== 1
+            // !(num % 2)
+            if(num % 2 === 0) {
+                evenSum += num;
+            }
+        }
+
+        console.log(`짝수 합계 : ${evenSum}`)
+    </script>
+</body>
+</html>

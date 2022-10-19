@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-mission8-copy</title>
+</head>
+<body>
+    <h1>for-mission8-copy</h1>
+    <script>
+        const star = parseInt(prompt('찍고 싶은 별 수를 입력해주세요.'));
+
+        /* 
+            예) 3
+            ***
+            ***
+            ***
+
+            예) 4
+            ****
+            ****
+            ****
+            ****
+        */ 
+        let result = '';
+        for(var i=0 ; i<star ; i++) {
+            for(var z=0 ; z<star ; z++) {
+                result += '*'
+            }
+            result += '\n';
+        }
+        console.log(result);
+        
+
+    </script>
+</body>
+</html>

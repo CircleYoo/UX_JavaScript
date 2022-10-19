@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arr</title>
+</head>
+<body>
+    <h1>arr</h1>
+    <script>
+        const arr = [10, 20, 30, 40, 100];
+        for(var i=0 ; i<arr.length ; i++) { 
+            // (현재)arr.length = 5;
+                /*
+                    5 대신 length를 쓴 이유 :
+                            나중에 배열 값에 변화를 줄 경우를 대비해서
+                */
+            console.log(`i : ${i} - arr[${i}]: ${arr[i]}`);
+            // console.log(arr[i]);
+            // console.log(i)와 다른 것을 잘 인지하자
+        }
+
+    </script>
+</body>
+</html>

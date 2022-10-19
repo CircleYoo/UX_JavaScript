@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while</title>
+</head>
+<body>
+    <h1>while</h1>
+    <script>
+        /* 
+            조건식이 true인 동안 반복함.
+            while(조건식) {
+                반복하고 싶은 내용
+            }
+        */
+
+        /*
+            for와 while의 차이 :
+                for : 반복 횟수가 명확할 때
+                    : 조건식, 초기값이 블락 안에 모여있어 가독성이 좋다
+
+                while : 반복 횟수가 불명확할 때
+                      : 조건식이 흩어져 있어 가독성이 나쁘다
+        */
+
+        let sum = 0;
+        let i = 1;
+
+        // 
+        while(i <= 100) {
+            sum += i;
+            i++;
+        }
+        console.log(sum);
+        
+        console.log('----')
+        
+        let sum2 = 0;
+        let z = 1;
+        while(z <= 100) {
+            sum2 += z;
+            if(z === 50) {
+                break;
+            }
+            z++;
+        }
+        console.log(sum2);
+
+    </script>
+</body>
+</html>

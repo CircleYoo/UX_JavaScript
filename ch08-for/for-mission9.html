@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-mission9</title>
+</head>
+<body>
+    <h1>for-mission9</h1>
+    <script>
+        
+        /* 
+        예) 3
+        *
+        **
+        ***
+        
+        예) 4
+        *
+        **
+        ***
+        ****
+        */ 
+       
+        // const star = parseInt(prompt('찍고 싶은 별 수를 입력해주세요.'));
+        const star = parseInt(5);
+
+        // 감소
+        let result = '';
+        for(var i=0 ; i<star ; i++) {
+            for(var z=0 ; z<star-i ; z++) {
+                result += (`*`); 
+            }
+            result += '\n'
+        } 
+        console.log(result);
+
+        // 증가
+        let result2 = '';
+        for(var i=0 ; i<star ; i++) {
+            for(var z=0 ; z<=i ; z++) {
+                result2 += (`*`); 
+            }
+            result2 += '\n'
+        } 
+        console.log(result2);
+
+        // 감소 + 증가
+        let result3 = '';
+        for(var i=0 ; i<star ; i++) {
+            for(var z=0 ; z<star-i ; z++) {
+                result3 += (`*`); 
+            }
+            result3 += '\n'
+        }
+        for(var i=0 ; i<star ; i++) {
+            for(var z=0 ; z<=i ; z++) {
+                result3 += (`*`); 
+            }
+            result3 += '\n'
+        } 
+        console.log(result3);
+
+        // 증가 + 감소 (가운데 중복 X)
+        let result4 = '';
+        for(var i=0 ; i<star ; i++) {
+            for(var z=0 ; z<=i ; z++) {
+                result4 += (`*`); 
+            }
+            result4 += '\n'
+        } 
+        for(var i=1 ; i<star ; i++) {
+            for(var z=star ; z>i ; z--) {
+                result4 += (`*`); 
+            }
+            result4 += '\n'
+        } 
+        console.log(result4);
+    </script>
+</body>
+</html>

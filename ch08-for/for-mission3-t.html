@@ -1,0 +1,35 @@
+  <!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-mission3</title>
+</head>
+<body>
+    <h1>for-mission3</h1>
+    <script>
+        /*
+            prompt() 함수로 숫자를 입력받고,
+            2~9사이였을 때만 구구단 출력한다.
+
+            다른 값을 입력(문자열 포함)하면 '구구단을 출력할 수 없습니다.' 출력
+        */
+
+        const MIN_DAN = 2;
+        const MAX_DAN = 9;
+        const val = prompt(); 
+        // prompt에서 받은 값은 무조건 '문자열'이다. 아래 수식은 입력값이 자동형변환이 되어서 숫자로 인식한 것
+        const dan = parseInt(val);
+        // 웬만해서 자동형변환이 되지 않도록 정수로 변환해준다.
+
+        if(isNaN(dan) || dan < MIN_DAN || dan > MAX_DAN) { // 1. 오류를 먼저 잡고
+            console.log('구구단을 출력할 수 없습니다.');
+        } else {
+            for(var i=1 ; i<10 ; i++) { // 2. pure한 값을 준다.
+                console.log(`${dan} X ${i} = ${dan * i}`);
+            }
+        }
+    </script>
+</body>
+</html>

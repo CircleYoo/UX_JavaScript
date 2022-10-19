@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for-mission5-t</title>
+    <!-- tab을 이용한 구구단 가로정렬하기 -->
+</head>
+<body>
+    <h1>for-mission5-t.html</h1>
+    <script>
+
+        for(var i=1 ; i<10 ; i++) {
+            let str = ''; // ''을 안 넣으면 undefined가 뜬다.  
+            for(var z=2 ; z<10 ; z++) {
+                str = str + `${z} X ${i} = ${z * i}\t`;
+            }
+            console.log(str);
+            // console.log가 자동으로 개행이 들어간다.
+            // 그렇기때문에 문장을 다 만든 뒤에 console.log를 찍어야 9번 반복될 것
+
+            /* ★★★
+            빠르게 변하는 값, 느리게 변하는 값을 파악하고 
+            어떤 값을 바깥for문으로 먼저 쓸 지를 파악하는게 중요하다. 
+            */
+        } 
+
+        </script>
+</body>
+</html>

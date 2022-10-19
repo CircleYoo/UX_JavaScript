@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while-mission</title>
+</head>
+<body>
+    <h1>while-mission</h1>
+    <script>
+
+        // prompt값 입력
+            // 0이면 종료
+            // 짝수값을 입력했을 때만 계속 더한다.
+            // 짝수 입력된 값만 모두 더한 값을 마지막으로 출력
+
+        let sum = 0;
+        let num = 0;
+
+        do {
+            num = parseInt(prompt('더할 값을 입력하세요. (종료는 0)'))
+            if(num % 2 === 0) {
+            sum += num;
+            } 
+        } while(num !== 0);
+
+        console.log(`합계 : ${sum}`)
+        
+    </script>
+</body>
+</html>
