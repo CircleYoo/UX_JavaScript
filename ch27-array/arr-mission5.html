@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arr-mission5</title>
+</head>
+<body>
+    <h1>arr-mission5</h1>
+    <script>
+        const stuNames = ['철수', '영희', '영수'];
+        const myScores = [0, 0, 0];
+
+        // 국어, 영어, 수학 
+        const stuScores = [
+            [100, 90, 80],
+            [100, 100, 100],
+            [50, 60, 30],
+        ];
+
+        // 각 학생의 합계 점수를 출력해주세요.
+        // 철수 : 270점
+        // 영희 : 300점
+        // 영수 : 140점
+        
+        
+        for(let i=0 ; i<stuNames.length ; i++) {
+            let sum = 0; // 철수 + 영희 값이 나오지 않도록 다시 0점으로 만들어준다.
+            for(let z=0 ; z<stuScores.length ; z++) {
+                sum += stuScores[i][z];
+            }
+            console.log(`${stuNames[i]} : ${sum}점`);
+        }
+
+        </script>
+</body>
+</html>

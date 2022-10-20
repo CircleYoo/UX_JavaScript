@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arr4-1</title>
+    <!-- 2차원 배열의 for문 사용법 -->
+</head>
+<body>
+    <h1>arr4-1</h1>
+    <script>
+        const arr = [
+            [100, 200, 300, 400],
+            [500, 600, 700, 800, 111],
+            [900, 1000, 1100, 1200, 1300, 1400] // 층별 방의 갯수가 다른 것도 가능하다(But, 비추천)
+        ];
+
+        for(let i=0 ; i<arr.length ; i++) {
+            console.log(arr[i].length);
+            for(let z=0 ; z<arr[i].length ; z++) {
+                console.log(arr[i][z]);
+            }
+            console.log('')
+        }
+    </script>
+</body>
+</html>

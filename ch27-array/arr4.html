@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arr4</title>
+    <!-- 2차원 배열 -->
+</head>
+<body>
+    <h1>arr4</h1>
+    <script>
+        const arr = [
+            [100, 200, 300, 400],
+            [500, 600, 700, 800],
+            [900, 1000, 1100, 1200, 1300] // 층별 방의 갯수가 다른 것도 가능하다(But, 비추천)
+        ];
+
+        // 부모, 자식 간 관계 파악하기
+        // (현)arr 자식 : 3 ← 대괄호가 3개니까
+
+        const arr2 = [100, 200, 300, 400]
+
+        console.log(arr.length); // 3
+
+        console.log(arr[0].length); // 4
+        console.log(arr2.length); // 4
+
+        console.log(arr[0][1]); // 200
+        console.log(arr2[1]); // 200
+    </script>
+</body>
+</html>
