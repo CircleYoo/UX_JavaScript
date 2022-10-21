@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cb-msn1(2)</title>
+    <!-- 콜백함수가 얼마나 유연한지 알아보자 -->
+</head>
+<body>
+    <h1>cb-msn1(2)</h1>
+    <script>
+        const arr = [1, 5, 10, 22, 30, 41, 8, 9, 1011];
+        /*
+            꼭 forEach 메소드 이용
+            arr에 들어있는 값 중에 홀수 값만 모두 더해보세요.
+        */
+        let sum = 0;
+        arr.forEach(function(item, idx, arr) {
+            if(item % 2 === 1) {
+                sum += item;
+            }
+        });
+
+        console.log(sum);
+    </script>
+</body>
+</html>

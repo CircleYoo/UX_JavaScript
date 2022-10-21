@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function5-call back</title>
+    <!-- ★★★콜백 함수 -->
+</head>
+<body>
+    <h1>function5-call back</h1>
+    <script>
+        /*
+            콜백함수란?
+                    파라미터로 함수를 전달받아, 함수의 내부에서 실행하는 함수
+        */
+        function calc(fn, n1, n2) {
+            return fn(n1, n2);
+        }
+
+        function sum(n1, n2) {
+            return n1 + n2;
+        }
+
+        const multi = function(n1, n2) {
+            return n1 * n2;
+        }
+
+        console.log(calc(sum, 10, 20));
+        console.log(calc(multi, 10, 20));
+        console.log(calc(
+                function(n1, n2) {
+                return n1 * n2;
+            }, 
+            10, 20
+            )
+        );
+        // 함수 리터럴
+        // 콜백함수는 보통 익명함수(anonymous function)를 사용한다.
+    </script>
+</body>
+</html>

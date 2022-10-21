@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function2</title>
+</head>
+<body>
+    <h1>fuction2</h1>
+    <script>
+        function sum(n1, n2=0) { // 이렇게 default값도 줄 수 있다.
+            return n1 + n2;
+        }
+
+        console.log(sum(10, 20));
+        console.log(sum(10, 20, 40)); 
+        console.log(sum(10)); //  null (n2 : undefined)
+
+        /* 이렇게 해도 에러 터지지 않는다.
+           JS에서는 오버로딩이라는 기능이 없기 때문에
+        */
+
+        // 파라미터 갯수가 달라서 함수 적용이 되게 한다면?
+        function multi() {
+            // console.log(arguments)
+            console.log('length : ' + arguments.length)
+            console.log(arguments[0])
+            console.log(arguments[1])
+        }
+        multi(4);
+        multi(4, 8);
+
+        console.log(multi(4, 8));
+
+    </script>
+</body>
+</html>

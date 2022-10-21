@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cd_forEach</title>
+</head>
+<body>
+    <h1>cd_forEach</h1>
+    <script>
+        const arr = [1, 5, 10, 22, 30, 41, 8];
+        for(let i=0; i<arr.length; i++) {
+            console.log(arr[i]);
+        }
+        console.log('------')
+        arr.forEach(function(item, idx, arr) {
+            // console.log('hello') // ⑦hello - 7번 찍혔다는 것을 알 수 있다.
+            console.log(`item : ${item}, idx : ${idx}`);
+        });
+    </script>
+</body>
+</html>

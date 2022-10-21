@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cb-map</title>
+</head>
+<body>
+    <h1>cb-map</h1>
+    <script>
+        const arr = [1, 5, 10, 22, 30, 41, 8, 9];
+        const arr2 = arr.map(function(item) {
+            return item * 2;
+        })
+        console.log(arr.toString());
+        console.log(arr2.toString());
+
+        // forEach()는 void형(앞에 method가 없다.)
+        // map()은 return값을 출력할 수 있다.
+    </script>
+</body>
+</html>
